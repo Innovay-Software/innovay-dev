@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Logo from './svg/logo'
+import ContactUsModal from './contactUsModal'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -26,19 +27,12 @@ export default function Footer() {
               >
                 <Image src={'/gmail.png'} alt={''} width="40" height="40" />
               </a>
-              <a
-                href={`tel:${process.env.NEXT_PUBLIC_CONTACT_PHONE}`}
-                className="hover:underline text-md"
-              >
+              <ContactUsModal>
                 <Image src={'/mobile.png'} alt={''} width="40" height="40" />
-              </a>
-              <a
-                href={`${process.env.NEXT_PUBLIC_CONTACT_WHATSAPP}`}
-                className="hover:underline text-md"
-                target="_blank"
-              >
+              </ContactUsModal>
+              <ContactUsModal>
                 <Image src={'/whatsapp.png'} alt={''} width="40" height="40" />
-              </a>
+              </ContactUsModal>
             </div>
             <p className="text-md text-gray-500 mt-5">
               &copy; {year} {process.env.NEXT_PUBLIC_COMPANY_NAME} <br /> All

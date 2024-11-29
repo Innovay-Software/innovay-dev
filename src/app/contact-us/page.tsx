@@ -28,27 +28,15 @@ export default async function ContactUs() {
           <div className="my-5 text-2xl text-center md:text-left">
             {process.env.NEXT_PUBLIC_COMPANY_NAME}
           </div>
-          <ul>
-            {Object.keys(contactInfo).map(function (keyName, keyIndex) {
-              return (
-                <a
-                  key={`contact-us-contact-info-${keyIndex}`}
-                  href={`mailto:${process.env.NEXT_PUBLIC_CONTACT_EMAIL}`}
-                  className="hover:underline text-md flex flex-row items-center my-4"
-                >
-                  <span className="ml-5 text-indigo-700">
-                    {keyName}: {contactInfo[keyName][0]}
-                  </span>
-                </a>
-              )
-            })}
-          </ul>
+          <div className="flex justify-center md:justify-start h-24">
+            <ContactUsModal>
+              <PrimaryButton
+                content={'Get in Touch Now!'}
+                url={''}
+              ></PrimaryButton>
+            </ContactUsModal>
+          </div>
         </div>
-      </div>
-      <div className="flex justify-center h-32 animate-bounce">
-        <ContactUsModal>
-          <PrimaryButton content={'Get in Touch Now!'} url={''}></PrimaryButton>
-        </ContactUsModal>
       </div>
     </section>
   )
