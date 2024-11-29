@@ -1,0 +1,14 @@
+# docker-compose -f docker-compose-innovay-web.yml up -d --no-recreate
+# docker-compose -f docker-compose-innovay-web.yml down
+
+services:
+  web:
+    container_name: innovay_web
+    image: node:lts-iron
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - "10181:3000"
+    command: >
+      sh -c "cd /var/www/html && rm -fr build && npm install && npm run build && npm run start"
+

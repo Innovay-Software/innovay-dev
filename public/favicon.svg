@@ -1,0 +1,27 @@
+<svg aria-hidden="true" focusable="false" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><linearGradient id="my-cool-gradient" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#4974e0"></stop><stop offset="100%" stop-color="#00e2d3"></stop></linearGradient><g fill="url(#my-cool-gradient)"><path d="M0,0 M100,100 
+    M28,19
+    a17 17  0 0 1 34,0
+    a17 17  0 0 1 -34,0
+    h11
+    a6 6 0 0 0 12,0
+    a6 6 0 0 0 -12,0
+    z
+  "></path><path d="M0,0 M100,100 
+    M28 81
+    a17 17 0 0 0 34,0
+    v-22
+    a17 17 0 0 0 -34,0
+    v22
+    h11
+    v-22
+    a6 6 0 0 1 12,0
+    v22
+    a6 6 0 0 1 -12,0
+    z
+  "></path><path d="M0,0 M100,100 
+    M45,25
+    a36.5 36.5 0 0 1 0,73
+    v-11
+    a25.5 25.5 0 0 0 0,-51
+    z
+  "></path></g></svg>
