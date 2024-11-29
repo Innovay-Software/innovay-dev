@@ -15,7 +15,7 @@ jobs:
         username: ${{ secrets.H2_VPS_USERNAME }}
         key: ${{ secrets.H2_VPS_SSH_PRIVATE_KEY }}
         port: ${{ secrets.H2_VPS_PORT }}
-        scripts: |
+        script: |
           echo `date` >> ~/github-action.innovay-dev.log
           kubectl rollout restart deploy/innovay-dev-deploy -ninnovay
           echo "Completed\n" >> ~/github-action.innovay-dev.log
